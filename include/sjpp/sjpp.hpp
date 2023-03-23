@@ -5,6 +5,20 @@
 #include <utility>
 
 namespace sjpp {
-    std::pair<std::vector<Entry>, Code>
-    get_entries(std::string_view word);
+
+    class SjpAPI {
+    public:
+        SjpAPI();
+
+        ~SjpAPI();
+
+        [[nodiscard]] std::pair<std::vector<Entry>, Code>
+        get_entries(std::string_view word);
+
+    private:
+        struct Impl;
+        Impl *m_impl;
+    };
+
+
 } // namespace sjpp
