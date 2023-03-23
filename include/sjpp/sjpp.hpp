@@ -18,6 +18,8 @@ namespace sjpp {
     private:
         struct Impl;
         Impl *m_impl;
+
+        std::pair<std::string, Code> download_url(const std::string &url) noexcept;
     };
 
 
