@@ -1,12 +1,10 @@
 #pragma once
 
-#include <string>
+#include "types.hpp"
 #include <vector>
+#include <utility>
 
 namespace sjpp {
-// enum struct ErrorCode {
-
-// }
-
-// std::vector<std::string> get_entries(std::string_view word);
+    std::pair<std::vector<Entry>, Code>
+    get_entries(std::string_view word);
 } // namespace sjpp
