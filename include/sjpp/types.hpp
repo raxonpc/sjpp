@@ -9,6 +9,7 @@ namespace sjpp {
         notConnected,   //!< could not establish connection
         wordNotFound,   //!< word does not exist in the dictionary
         missingEntries, //!< when the word exists in the dictionary, but there are no meanings
+        invalidFile     //!< when html is not valid
     };
 
     struct Entry {
