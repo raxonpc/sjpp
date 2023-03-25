@@ -28,6 +28,7 @@ namespace sjpp {
 
     public:
         explicit Parser(const std::string &html);
+        Parser() = default;
 
         std::pair<std::vector<Entry>, Code> parse() noexcept;
 

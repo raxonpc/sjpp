@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>kruk - Słownik SJP</title>
+    <style type="text/css">
+        body { margin: 0; padding: 15px; font: 16px/1.4 sans-serif; }
+        body, .basecl { background: #fff; color: #222; }
+        body { word-wrap: break-word; -webkit-text-size-adjust: 100%; }
+        a { text-decoration: none; }
+        a:visited { color: #528; } a:link, a.lc, .lc { color: #23a; }
+        .bg1 { background: #cdf; } .bg0 { background: #26c; }
+        h1 { font: bold 24px sans-serif; }
+        hr { border: none; height: 1px; background: rgba(128,128,128,.4); }
+        .z p { max-width: 34em; margin-bottom: 1.7em; }
+        .sm { font: 14px sans-serif; }
+        .lt { opacity: .8; } .lt a { color: inherit; }
+        .lopc { opacity: .7; } .lbg { background: rgba(128,128,128,.08); }
+        ul.m { list-style-type: square; line-height: 2.4; }
+        .ifnm { display: none; }
+        button, input, textarea { font: inherit; background: none; color: inherit; }
+        button { padding: 5px 12px; border: solid 1px rgba(128,128,128,.6); border-radius: 4px; }
+        input, textarea { padding: 5px 4px; border: solid 1px rgba(128,128,128,.6); border-radius: 3px; outline: none; }
+        input[type=checkbox] { vertical-align: middle; }
+        .aucmp { display: none; position: absolute; left: 0; right: 0;
+            border: solid 1px rgba(128,128,128,.4); font-weight: bold; z-index: 1; }
+        .aucmp div { padding: 6px 4px; cursor: pointer; }
+        .aucmp div:hover, .aucmp .ausel { background: rgba(128,128,128,.1); }
+        @media (min-width: 760px) {
+            body { max-width: 820px; margin: 0 auto; font: 14px/1.4 sans-serif; }
+            .sm { font: 13px sans-serif; }
+            ul.m { list-style-type: none; padding: 0; opacity: .8; line-height: inherit; }
+            ul.m li { display: inline; margin-right: 1em; }
+            ul.m a { color: inherit; }
+            .ifnm { display: block; } .ifm { display: none; }
+        }
+        @media (min-width: 760px) and (max-resolution: 1dppx) {
+            .win body { font: 13px/1.4 verdana, sans-serif; }
+        }
+        @media (prefers-color-scheme: dark) and (max-width: 760px) {
+            body, .basecl { background: #242424; color: #ccc; color-scheme: dark; }
+            a:visited { color: inherit; } a:link, a.lc, .lc { color: #fff; }
+            .bg1 { background: #444; } .bg0 { background: #444; }
+        }
+        .wtab { border-collapse: collapse; }
+        .wtab td, .wtab th { padding: .4em .5em; border: solid 1px rgba(128,128,128,.2); }
+        .wtab th { text-align: left; font-weight: normal; width: 25%; }
+        .wtab .bbct { border-bottom-color: transparent; }
+        xselect { padding: 3px 0; }
+        input.lh1 { line-height: 1; }
+        .trot svg { transform: rotate(90deg) translate(4px,4px); }
+    </style>
+    <script>
+        if (/Windows|X11/.test(navigator.userAgent))
+            document.documentElement.className = ' win';
+    </script>
+</head>
+
+<body>
+
+<div class="ifnm" style="margin: .5em 0 1.25em;">
+    <a class="bg0" href="/" style="float: left; color: #fff; border-radius: 5px; padding: 0 2.1em 4px; font: bold 26px Verdana, sans-serif; text-decoration: none; margin-right: .7em; ">SJP</a>
+    <form style="margin: 0;" action="/sl/zg.phtml" method="post">
+        <div style="display: inline-block; position: relative; width: 34%;"><input id="inp1" accesskey="s" tabindex="1" autocomplete="off" style="margin: 0; width: 100%; box-sizing: border-box; padding: 7px 4px;" name="sl" value="kruk" ></input><div class="aucmp basecl"></div></div> <button style="margin-left: 0; padding: 7px 12px;">sprawdź</button>
+        <a title="LOSUJ" rel="nofollow" href="/sl/los/" style="padding: .4em .6em; line-height: .8; margin: 0 .5em; vertical-align: sub;">*</a>
+    </form>
+</div>
+<div class="ifm bg0" style="margin: -15px -15px 0; color: #fff; opacity: .9; text-align: center; font: bold 18px/44px sans-serif; padding-top: 2px; position: relative;"><a href="#" onclick="a=document.getElementById('mblock'); if(a) a.className=(a.className?'':'ifnm'); return false;" style="position: absolute; left: 0; top: 0; width: 54px;"><svg style="fill: #fff; width: 24px; height: 24px; vertical-align: middle;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M0 5h22v2.2H0z m0 6h22v2.2H0z m0 6h22v2.2H0z"></path></svg></a><a title="LOSUJ" rel="nofollow" href="/sl/los/" style="position: absolute; right: 0; opacity: .7; padding: 0 16px; margin-top: -1px; color: inherit;"><svg style="fill: currentColor; width: 16px; height: 16px; vertical-align: middle;" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="16" height="16" rx="2" ry="2" stroke-width="1.25" stroke="currentColor" fill="transparent"></rect><circle cx="6" cy="6" r="1.25"></circle><circle cx="12" cy="6" r="1.25"></circle><circle cx="9" cy="9" r="1.25"></circle><circle cx="6" cy="12" r="1.25"></circle><circle cx="12" cy="12" r="1.25"></circle></svg></a>SŁOWNIK SJP</div>
+<div class="ifnm" id="mblock">
+    <ul class="m"><li><a href="/">słownik języka polskiego sjp</a></li><li><a href="/sl/lp.phtml">lista</a></li><li><a href="/sl/ok.phtml">komentarze</a></li><li><a href="/sl/po.phtml">więcej</a></li></ul>
+    <hr class="ifnm" style="margin: 1.25em 0 2em;" />
+</div>
+<form class="ifm" action="/sl/zg.phtml" method="post">
+    <table style="margin: 15px 0 20px;" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" style="position: relative;"><input id="inp2" autocomplete="off" name="sl" value="kruk" style="padding: 7px 4px; box-sizing: border-box; width: 100%;" autocapitalize="off" /><div class="aucmp basecl"></div><div class="clx" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); padding: 6px 10px; opacity: .2;" onclick="xin=document.getElementById('inp2');xin.value='';xin.focus();return false;">X</div></td><td valign="top" width="1%" style="padding-left: 4px;"><button style="padding: 7px 12px;">sprawdź</button></td></tr></table>
+</form>
+
+<script>
+    function dopen(n, bsup) {
+        var de = document.getElementById('d'+n), tr = document.getElementById('t'+n);
+        var ton = !(de.style.display == 'block');
+        de.style.display = (ton ? 'block' : 'none');
+        tr.className = (ton ? 'trot' : 0);
+        if (bsup) document.cookie = 'aopen='+(ton?1:0)+';path=/';
+    }
+    function vswap(i1, i2) {
+        var te, e1 = document.getElementById(i1), e2 = document.getElementById(i2);
+        if (!e1 || !e2) return;
+        te = e1.value, e1.value = e2.value, e2.value = te;
+    }
+    function geid(ei) { return document.getElementById(ei); }
+    function stbl(ei) {
+        document.getElementById(ei).style.display='block';
+    }
+</script>
+
+<h1 style="font: bold 24px sans-serif; margin-bottom: 0;">kruk</h1>
+<p style="opacity: .7;">dopuszczalne w grach <a title="Dotyczy gier słownych skrable, literaki itp." onclick="alert(event.target.title); return false;" style="font-size: 95%; letter-spacing: 1px; cursor: pointer;">(i)</a> <svg style="opacity: .7; width: 18px; height: 18px; vertical-align: middle;" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" stroke="currentColor" d="M3 9l4 4l8 -8"></path></svg></p>
+<p style="margin-bottom: 0;"><b style="font: bold large/1.4 sans-serif;"><a class="lc" href="/kruk" onclick="dopen(23775, 0); return false;"><span id="t23775" ><svg style="width: 14px; height: 12px;" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0l8 6l-8 6"></path></svg></span>kruk</a></b></p>
+
+<div id="d23775" style="display: none; margin-top: 1.25em;">
+    <table class="wtab" width="100%" summary="kruk">
+        <tr class="bg1"><th class="bbct" colspan="2"><b>kruk</b></th></tr>
+        <tr><th scope="row" valign="top">występowanie</th><td>Słownik ortograficzny: rejestr wyrazów występujących w języku polskim - Muza SA 2001, 2005, 2006 - T.&nbsp;Karpowicz</td></tr>
+        <tr><th scope="row">odmienność</th><td>tak</td></tr>
+        <tr><th scope="row" valign="top"><tt>N</tt></th><td>krukach, krukami, krukom</td></tr>
+        <tr><th scope="row" valign="top"><tt>O</tt></th><td>kruka, krukiem, krukowi, kruku</td></tr>
+        <tr><th scope="row" valign="top"><tt>T</tt></th><td>kruków</td></tr>
+        <tr><th scope="row" valign="top"><tt>s</tt></th><td>kruki</td></tr>
+        <tr><th scope="row">aktualizacja</th><td><nobr>tevex, <span class="sm">2012-03-19</span></nobr></td></tr>
+    </table>
+    <p><b>znaczenie:</b> <span class="sm lt"><a rel="nofollow" href="/sl/zn.phtml?id=23775">info</a> (4)</span> </p></div>
+<p style="margin: .5em 0; font: medium/1.4 sans-serif; max-width: 34em; ">1. wszystkożerny ptak z rodziny krukowatych, o czarnym upierzeniu;<br />2. przenośnie: (głównie w l.mn.) człowiek zły, żerujący na ludzkiej tragedii;<br />3. przenośnie: zwiastun nieszczęścia;<br />4. biały kruk - unikat</p>
+<p style="line-height: 1;">-</p>
+<h1 style="font: bold 24px sans-serif; margin-bottom: 0;">kruk</h1>
+<p style="opacity: .7;">dopuszczalne w grach <a title="Dotyczy gier słownych skrable, literaki itp." onclick="alert(event.target.title); return false;" style="font-size: 95%; letter-spacing: 1px; cursor: pointer;">(i)</a> <svg style="opacity: .7; width: 18px; height: 18px; vertical-align: middle;" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-width="2" stroke="currentColor" d="M3 9l4 4l8 -8"></path></svg></p>
+<p style="margin-bottom: 0;"><b style="font: bold large/1.4 sans-serif;"><a class="lc" href="/kruk" onclick="dopen(210515, 0); return false;"><span id="t210515" ><svg style="width: 14px; height: 12px;" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0l8 6l-8 6"></path></svg></span>kruk</a></b></p>
+
+<div id="d210515" style="display: none; margin-top: 1.25em;">
+    <table class="wtab" width="100%" summary="kruk">
+        <tr class="bg1"><th class="bbct" colspan="2"><b>kruk</b></th></tr>
+        <tr><th scope="row" valign="top">występowanie</th><td>Praktyczny słownik współczesnej polszczyzny - Kurpisz 1994-2005 - H.&nbsp;Zgółkowa</td></tr>
+        <tr><th scope="row">odmienność</th><td>tak</td></tr>
+        <tr><th scope="row" valign="top"><tt>N</tt></th><td>krukach, krukami, krukom</td></tr>
+        <tr><th scope="row" valign="top"><tt>O</tt></th><td>kruka, krukiem, krukowi, kruku</td></tr>
+        <tr><th scope="row" valign="top"><tt>T</tt></th><td>kruków</td></tr>
+        <tr><th scope="row" valign="top"><tt>o</tt></th><td>krukowie</td></tr>
+        <tr><th scope="row" valign="top"><tt>s</tt></th><td>kruki</td></tr>
+        <tr><th scope="row">aktualizacja</th><td><nobr>koalar, <span class="sm">2007-11-07</span></nobr></td></tr>
+    </table>
+    <p><b>znaczenie:</b> <span class="sm lt"><a rel="nofollow" href="/sl/zn.phtml?id=210515">info</a> (2)</span> </p></div>
+<p style="margin: .5em 0; font: medium/1.4 sans-serif; max-width: 34em; ">dawniej: strażnik strzegący domostwa pracodawców</p>
+<p style="line-height: 1;">-</p>
+<h1 style="font: bold 24px sans-serif; margin-bottom: 0;">Kruk</h1>
+<p style="opacity: .7;">niedopuszczalne w grach <a title="Dotyczy gier słownych skrable, literaki itp." onclick="alert(event.target.title); return false;" style="font-size: 95%; letter-spacing: 1px; cursor: pointer;">(i)</a></p>
+<p style="margin-bottom: 0;"><b style="font: bold large/1.4 sans-serif;"><a class="lc" href="/Kruk" onclick="dopen(177706, 0); return false;"><span id="t177706" ><svg style="width: 14px; height: 12px;" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0l8 6l-8 6"></path></svg></span>Kruk</a></b></p>
+
+<div id="d177706" style="display: none; margin-top: 1.25em;">
+    <table class="wtab" width="100%" summary="Kruk">
+        <tr class="bg1"><th class="bbct" colspan="2"><b>Kruk</b></th></tr>
+        <tr><th scope="row" valign="top">występowanie</th><td>Wielki słownik ortograficzny - PWN 2003, 2006, 2008, 2009 - E.&nbsp;Polański</td></tr>
+        <tr><th scope="row">odmienność</th><td>tak</td></tr>
+        <tr><th scope="row" valign="top"><tt>N</tt></th><td>Krukach, Krukami, Krukom</td></tr>
+        <tr><th scope="row" valign="top"><tt>O</tt></th><td>Kruka, Krukiem, Krukowi, Kruku</td></tr>
+        <tr><th scope="row" valign="top"><tt>T</tt></th><td>Kruków</td></tr>
+        <tr><th scope="row" valign="top"><tt>o</tt></th><td>Krukowie</td></tr>
+        <tr><th scope="row" valign="top"><tt>s</tt></th><td>Kruki</td></tr>
+        <tr><th scope="row">aktualizacja</th><td><nobr>tevex, <span class="sm">2010-09-20</span></nobr></td></tr>
+    </table>
+    <p><b>znaczenie:</b> <span class="sm lt"><a rel="nofollow" href="/sl/zn.phtml?id=177706">info</a> (1)</span> </p></div>
+<p style="margin: .5em 0; font: medium/1.4 sans-serif; max-width: 34em; ">nazwisko</p>
+<p style="line-height: 1;">-</p>
+<h1 style="font: bold 24px sans-serif; margin-bottom: 0;">Kruk</h1>
+<p style="opacity: .7;">niedopuszczalne w grach <a title="Dotyczy gier słownych skrable, literaki itp." onclick="alert(event.target.title); return false;" style="font-size: 95%; letter-spacing: 1px; cursor: pointer;">(i)</a></p>
+<p style="margin-bottom: 0;"><b style="font: bold large/1.4 sans-serif;"><a class="lc" href="/Kruk" onclick="dopen(192632, 0); return false;"><span id="t192632" ><svg style="width: 14px; height: 12px;" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 0l8 6l-8 6"></path></svg></span>Kruk</a></b></p>
+
+<div id="d192632" style="display: none; margin-top: 1.25em;">
+    <table class="wtab" width="100%" summary="Kruk">
+        <tr class="bg1"><th class="bbct" colspan="2"><b>Kruk</b></th></tr>
+        <tr><th scope="row" valign="top">występowanie</th><td>Wielka encyklopedia PWN (ndpl)</td></tr>
+        <tr><th scope="row">odmienność</th><td>tak</td></tr>
+        <tr><th scope="row" valign="top"><tt>O</tt></th><td>Kruka, Krukiem, Krukowi, Kruku</td></tr>
+        <tr><th scope="row">aktualizacja</th><td><nobr>scaevus, <span class="sm">2006-10-19</span></nobr></td></tr>
+    </table>
+    <p><b>znaczenie:</b> <span class="sm lt"><a rel="nofollow" href="/sl/zn.phtml?id=192632">info</a> (1)</span> </p></div>
+<p style="margin: .5em 0; font: medium/1.4 sans-serif; max-width: 34em; ">łac. Corvus; gwiazdozbiór</p>
+<hr style="margin: 2em 0;" />
+<p style="margin: 1.5em 0; font-weight: bold;">KOMENTARZE</p>
+
+<div class="z">
+    <div id="p413056"><b>~gosc</b> <span class="sm lt"><a name="p413056" href="#p413056">#</a> 2016-07-25</span><p>A to nie jest tak, że:<br />
+        &quot;Wrona&quot; to po prostu imię starożytnego boga praindoeuropejskiego oznaczające ni mniej, ni więcej tyle co &quot;wraniający&quot;, czyli napełniający poprzez ronienie, czyli ulewanie, znaczy był to bóg ulewy, z młodszego o dwa tysiące lat Kieleckiego(Keltoi) zwanej &quot;de-scent&quot;, czyli &quot;de-szcz&quot;. Wroną nazywano czarne zwierzęta pod postacią których &quot;bóg&quot; (a w zasadzie &quot;dziw&quot;, czyli pierwowzór tego z czego średnoiwieczni Grecy stworzyli &quot;diabła&quot;) się objawiał. Ta nazwa to np. w starożytnej grece: Ouranos, w sanskrycie Worona / Waruna.<br />
+        <br />
+        &quot;Kruk&quot;, to jedynie określenie czynności wykonywanej przez te ptaki, czyli krzyczenia, &quot;kraczenia&quot;, krakania, co koresponduje z nazwą innego boga - Kronosa. Syna Uranosa. Krone, to kruk po grecku. A &quot;krzyk&quot; w sanskrycie to &quot;dra&quot;(drzeć się), co daje imię boga Indra-Rudra (dosłownie rozdarty), który to bóg wojuje z sierpem w dłoni niczym grecki Kronos, z tym, że posiada oprócz tego cechy syna Kronosa - Dzeusa... może grecy rozdzielili to na późniejszym etapie rozwoju religii... może arjowie połączyli... Bóg wie ;)<br />
+        <br />
+        Prawidłowa nazwa tego ptaka czarnego, i tego większego i tego mniejszego, wyewoluowana z praindoeuropejskiego na polszczyznę, winna moim zdaniem brzmieć: &quot;Raba&quot;. Tak samo jak nazwa rzeki płynącej na południe od Krakowa (Krukowa, starożytnego ośrodka kultu religijnego Kruka). Od czego pochodzi, jak myślę, semickie słowo &quot;rav&quot; lub &quot;rab&quot; oznaczające &quot;wielmożny&quot;, &quot;pan&quot;, &quot;bogaty&quot;, &quot;boski&quot; będące określeniem Allaha w Koranie oraz będące korzeniem słowa Rabbi, dosł. &quot;Mój pan&quot;.<br />
+        <br />
+        To wszystko może być odprysk sytuacji geopolitycznej z lat 3100-2900 oraz 2350-2100 pne, kiedy to w niejasnych okolicznościach na przestrzeni od Szkocji i Włoch, po Indonezję i Koreę powstaje zadziwiająco jednolita pod względem religijnym kultura. A wszędzie jak grzyby po deszczu zaczynają wyrastać piśmienne cywilizacje wyznające siły natury i bogów-zwierzęta.</p>
+    </div>
+    <div id="p447751"><b>marek176cm</b> <span class="sm lt"><a name="p447751" href="#p447751">#</a> 2018-01-25</span><p>Jak wiemy, słowo &#039;kruk&#039; jest rodzaju męskiego. Jak więc nazywa się samica kruka? Czy jest jakieś słowo określające samicę?</p>
+    </div>
+    <div id="p447757"><b>~gosc</b> <span class="sm lt"><a name="p447757" href="#p447757">#</a> 2018-01-25</span><p>Odpowiadam na pytania: krukówna, np. Agnieszka Kukówna polska aktorka.</p>
+    </div>
+    <div id="p447770"><b>winowjajca</b> <span class="sm lt"><a name="p447770" href="#p447770">#</a> 2018-01-26</span><p>Skoro upieracie się, że córka pana Jajemgi to Jajemżanka, to również i tutaj powinno być nie Krukówna, lecz Kruczanka.</p>
+    </div>
+    <div id="p447801"><b>marek176cm</b> <span class="sm lt"><a name="p447801" href="#p447801">#</a> 2018-01-26</span><p>Kochani! Nie chodzi mi o osoby. Chodzi mi o formalną nazwę ptaka, samicę kruka.</p>
+    </div>
+    <div id="p447803"><b>~gosc</b> <span class="sm lt"><a name="p447803" href="#p447803">#</a> 2018-01-26</span><p>A czy wszystkie zwierzęta muszą mieć rozróżniona nazwę dla samca i samicy? śmiem stwierdzić, że zdecydowana większość nie ma. Oprócz kruka, w samym świecie ptaków: sroka, wrona, gawron, bocian, szpak, jaskółka... Wśród pozostałych - mysz, chomik, koala, żaba, jaszczurka, jeż, bóbr...<br />
+        Co nie znaczy, że nie możesz użyć własnej wyobraźni i wymyślić własnego określenia, by go używać.</p>
+    </div>
+    <div id="p447812"><b>~gosc</b> <span class="sm lt"><a name="p447812" href="#p447812">#</a> 2018-01-26</span><p>Dokładnie. A wydaje mi się, że w świecie zwierząt częściej dyskryminowane są samce. Czy ktoś wogóle zastanawiał się nad samcem małpy lub żaby?</p>
+    </div>
+    <div id="p447817"><b>~gosc</b> <span class="sm lt"><a name="p447817" href="#p447817">#</a> 2018-01-26</span><p>Samce rodzaju żeńskiego, samice rodzaju męskiego, czego to ludzie nie wymyślą.</p>
+    </div>
+    <div id="p447821"><b>przekorny</b> <span class="sm lt"><a name="p447821" href="#p447821">#</a> 2018-01-26</span><p>Odpowiadam na pytanie mego kolegi WK.<br />
+        Mogłaby być krócica, ale byłoby to spieszczenie od króczycy. No właśnie, od króczycy, przeszkadza &quot;ó&quot;, zatem - kruca, stąd się wzięła kruca-fuks czy kruca bomba (samice kruka były uważane za bardziej &quot;złe&quot;/szkodliwe od samców, ale nie będę robił wykładu &quot;etylomogicznego&quot;). =]</p>
+    </div>
+</div>
+
+<script>
+    function ac() {
+        document.getElementById("achd").style.display = 'none';
+        document.getElementById("acbd").style.display = 'block';
+        //document.getElementById("post").focus();
+    }
+</script>
+
+<p id="achd" style="margin-bottom: 2em;"><button onclick="ac(); return false;">dodaj +</button></p>
+
+<div id="acbd" style="display: none; margin-bottom: 2em; max-width: 40em; ">
+
+    <hr style="margin: 1.5em 0;" />
+
+    <p style="color: red;">PROSIMY PISAĆ KRÓTKO I NA TEMAT
+
+
+
+
+    <form style="margin: 1.5em 0 0;" action="/kruk" method="post">
+        <input type="hidden" name="action" value="post" />
+        <textarea maxlength="280" name="post" id="post" rows="7" style="box-sizing: border-box; width: 100%; display: block;" onkeydown="if(event.keyCode==13&&event.ctrlKey) this.form.submit();">
+</textarea>
+        <p><input name="ncheck" size="14" style="margin-right: .5em;" /> 26352635&nbsp;od&nbsp;końca
+            <input name="nhash" type="hidden" value="284004508f01e9cd3418131482c95caa" /></p>
+        <p><button style="min-width: 6em;">ok</button></p>
+    </form>
+
+</div>
+
+<script>
+    function auc(a,k){function e(){b.innerHTML="";b.style.display="none";g=!0;f++}function l(d){var c=new XMLHttpRequest;c.onreadystatechange=function(){if(4==c.readyState&&200==c.status&&f==d){var a=JSON.parse(c.responseText);b.innerHTML="";for(var e=0;e<a.d.length;e++)b.innerHTML+="<div>"+a.d[e]+"</div>";g=0==a.d.length;b.style.display=g?"none":"block"}};c.open("GET","/sl/s/?q="+encodeURIComponent(a.value),!0);c.send()}if(a){var b=a.nextSibling;if(b){var f=
+        0,g=!1;a.onblur=function(a){e()};a.onkeydown=function(d){if(g)return!0;if(27==d.keyCode)return e(),!1;if(40!=d.keyCode&&38!=d.keyCode||!b.firstChild)return!0;var c=b.querySelector(".ausel");d=40==d.keyCode;if(c){c.className="";var h=d?c.nextSibling:c.previousSibling}h||(h=d?b.firstChild:b.lastChild);h.className="ausel";a.value=h.innerText;f++;return!1};b.onmousedown=function(d){if(d.target.parentNode==b)return a.value=d.target.innerText,a.form.submit(),!1};a.oninput=function(b){var c=++f;a.value.length?
+        setTimeout(function(){f==c&&l(c)},k):e()}}}}auc(document.getElementById("inp1"),150);auc(document.getElementById("inp2"),250);
+</script>
+<script>
+    document.addEventListener("keydown", function(e) { if (e.key!=="/"||e.ctrlKey||e.metaKey||e.altKey) return; if (/^(?:input|textarea|select|button)$/i.test(e.target.tagName)) return; e.preventDefault(); var i1=document.getElementById("inp1"); if (!i1) return; var il=i1.value.length; i1.setSelectionRange(il,il); i1.focus(); });
+</script>
+</body>
+</html>

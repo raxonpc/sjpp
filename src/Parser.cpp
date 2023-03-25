@@ -34,7 +34,7 @@ namespace sjpp {
                         return {output, Code::invalidFile};
                     }
 
-                    m_state = State::word;
+                    // m_state = State::word;
 
                     // auto [word, code] = parse_name(line);
                 }
