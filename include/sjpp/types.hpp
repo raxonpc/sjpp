@@ -13,6 +13,10 @@ namespace sjpp {
     };
 
     struct Entry {
+        Entry(const std::string& word, const std::string& meaning, bool allowed_in_games)
+        : word{ word }, meaning{ meaning }, allowed_in_games{ allowed_in_games } {}
+
+
         std::string word{};
         std::string meaning{};
         bool allowed_in_games{};

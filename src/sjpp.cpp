@@ -1,4 +1,5 @@
 #include "sjpp/sjpp.hpp"
+#include "Parser.hpp"
 #include <curl/curl.h>
 #include <algorithm>
 
@@ -64,8 +65,9 @@ namespace sjpp {
         if (code != Code::ok) {
             return {{}, code};
         }
-        // for now, just return contents of the page to test it out
-        return {{Entry{std::string{word}, content, false}}, Code::ok};
+
+        Parser html_parser{ content };
+        return html_parser.parse();
     }
 
 } // namespace sjpp
