@@ -1,4 +1,4 @@
-name: sjpp
+name: Build sjpp and run unit tests
 
 on: [push]
 
@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@main
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install libcurlpp-dev doxygen
       - name: Create build directory
         run: mkdir ${{ env.path }}
       - name: Compile
