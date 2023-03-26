@@ -4,7 +4,7 @@
 int main() {
     sjpp::SjpAPI sjp{};
 
-    auto [entries, code] = sjp.get_entries("krowa");
+    auto [entries, code] = sjp.get_entries("kruk");
 
     if(code != sjpp::Code::ok) {
         std::cerr << "Error looking up the word in the dictionary\n";

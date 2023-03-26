@@ -38,7 +38,7 @@ namespace sjpp {
 
         std::pair<std::vector<Entry>, Code> parse() noexcept;
 
-    protected:
+    private:
         // these functions return the whole line
         std::pair<std::string, FindCode> find_name() noexcept;
         std::pair<std::string, FindCode> find_next_line() noexcept;
