@@ -19,12 +19,12 @@
  *
  *  \section usage Usage
  *
- *  \include cli.cpp
+ *  \include basic_word_lookup.cpp
  *
  *  The usage of the API is fairly simple. One has to create a sjpp::SjpAPI variable, and then call sjpp::SjpAPI::get_entries() on it.
  *  It returns the list of entries + error code.
  *
- *  \example{lineno} cli.cpp
+ *  \example{lineno} basic_word_lookup.cpp
  *
  *  Example usage of the API.
  */

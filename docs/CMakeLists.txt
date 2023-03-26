@@ -25,7 +25,7 @@ set(DOXYGEN_HTML_COLORSTYLE LIGHT)
 
 doxygen_add_docs(
         doxygen
-        mainpage.dox ../include/sjpp/sjpp.hpp ../include/sjpp/types.hpp  ../examples/cli.cpp
+        mainpage.dox ../include/sjpp/sjpp.hpp ../include/sjpp/types.hpp ../examples/basic_word_lookup.cpp
         COMMENT "Generate html documentation of sjpp"
 )
 
