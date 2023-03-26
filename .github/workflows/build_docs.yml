@@ -32,9 +32,9 @@ jobs:
       path: build
     steps:
       - name: Check out code
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
         with:
-          submodule: 'recursive'
+          submodules: 'recursive'
       - name: Install dependencies
         run: |
           sudo apt update
