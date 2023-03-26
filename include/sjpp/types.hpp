@@ -6,9 +6,12 @@
 
 #include <string>
 
+/**
+@brief Namespace for sjpp API.
+*/
 namespace sjpp {
     /**
-     * Enum class for error codes.
+     @brief Enum for error codes
      */
     enum class Code {
         ok,             //!< success
