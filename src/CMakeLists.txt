@@ -54,6 +54,8 @@ if(SJPP_INSTALL)
             NAMESPACE sjpp::
             DESTINATION lib/cmake/sjpp)
 
+    set(INCLUDE_DIR "${CMAKE_INSTALL_PREFIX}/include/sjpp")
+
     set(targets_export_name sjppTargets CACHE INTERNAL "")
     configure_package_config_file(
             ${PROJECT_SOURCE_DIR}/cmake/Config.cmake.in
