@@ -1,0 +1,22 @@
+name: sjpp
+
+on: [push]
+
+jobs:
+  Compile_and_run_tests:
+    runs-on: ubuntu-latest
+    env:
+      path: build
+    steps:
+      - name: Check out code
+        uses: actions/checkout@main
+      - name: Create build directory
+        run: mkdir ${{ env.path }}
+      - name: Compile
+        working-directory: ${{ env.path }}
+        run: |
+          cmake ..
+          make
+      - name: Run tests
+        working-directory: ${{ env.path }}
+        run: ctest -V
