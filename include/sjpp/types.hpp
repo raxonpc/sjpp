@@ -3,6 +3,9 @@
 #include <string>
 
 namespace sjpp {
+    /**
+     * Enum class for error codes.
+     */
     enum class Code {
         ok,             //!< success
         curlError,      //!< when libcurl failed for some other reason
@@ -12,7 +15,15 @@ namespace sjpp {
         invalidFile     //!< when html is not valid
     };
 
+    /**
+     * Structure that represents a dictionary entry
+     */
     struct Entry {
+        /**
+      * @param word A string holding the word
+      * @param meaning A string holding the meaning of the word
+      * @param allowed_in_games Whether the entry can be used in word games.
+      */
         Entry(const std::string& word, const std::string& meaning, bool allowed_in_games)
         : word{ word }, meaning{ meaning }, allowed_in_games{ allowed_in_games } {}
 
@@ -22,6 +33,9 @@ namespace sjpp {
         bool allowed_in_games{};
     };
 
+    /**
+     * The exception thrown, when failed to initialize the API
+     */
     class sjpp_exception : public std::exception {
     public:
         explicit sjpp_exception(const std::string &msg) : message{msg} {}

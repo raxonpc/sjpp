@@ -6,12 +6,20 @@
 
 namespace sjpp {
 
+    /**
+       * The API class that does the lookups
+       */
     class SjpAPI {
     public:
         SjpAPI();
 
         ~SjpAPI();
 
+        /**
+       * The core function which does the dictionary lookup
+       * @param word A string holding the word to look up/
+       * @return The dictionary entries (if any) and an error code.
+       */
         [[nodiscard]] std::pair<std::vector<Entry>, Code>
         get_entries(std::string_view word);
 

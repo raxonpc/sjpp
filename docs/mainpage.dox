@@ -1,0 +1,25 @@
+/*! \mainpage sjpp
+ *
+ *  \section intro Introduction
+ *
+ *  sjpp - A C++ API for sjp.pl Polish dictionary.
+ *
+ *  \section build Build
+ *
+ *  sjpp uses CMake as its build system.
+ *	Simply build and install the project using CMake. Then you can use it, by calling find_package(sjpp) and linking to the
+ *  target_link_libraries(target sjpp::sjpp).
+ *
+ *  \section usage Usage
+ *
+ *  @code
+ *  #include <sjpp/sjpp.hpp>
+ *  int main() {
+ *      sjpp::SjpAPI sjp{};
+ *      auto [entries, code] = sjp.get_entries("ryba");
+ *  }
+ *  @endcode
+ *
+ *  The usage of the API is fairly simple. One has to create a sjpp::SjpAPI variable, and then call sjpp::SjpAPI::get_entries() on it.
+ *  It returns the list of entries + error code.
+ */

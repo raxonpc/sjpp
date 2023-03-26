@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 option(SJPP_BUILD_TESTS "Build unit tests" ON)
 option(SJPP_BUILD_APP "Build example app" ON)
+option(SJPP_BUILD_EXAMPLES "Build examples" ON)
 option(SJPP_INSTALL "Generate install target" ON)
 option(SJPP_DOCS "Generate documentation" ON)
 
@@ -37,9 +38,17 @@ if (SJPP_BUILD_APP)
     add_subdirectory(app)
 endif ()
 
+if (SJPP_BUILD_EXAMPLES)
+    add_subdirectory(examples)
+endif ()
+
 if (SJPP_BUILD_TESTS)
     # this line must be in the main CMakeLists
     include(CTest)
 
     add_subdirectory(test)
 endif ()
+
+if(SJPP_DOCS)
+    add_subdirectory(docs)
+endif()
