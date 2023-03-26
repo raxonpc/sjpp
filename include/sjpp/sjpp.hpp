@@ -1,3 +1,7 @@
+/** \file sjpp.hpp
+ * Main header file for sjpp API.
+ */
+
 #pragma once
 
 #include "types.hpp"

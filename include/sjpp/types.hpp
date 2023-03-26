@@ -1,3 +1,7 @@
+/** \file types.hpp
+ * Header file which defines data types used by the API (like dictionary entry)
+ */
+
 #pragma once
 
 #include <string>
