@@ -75,27 +75,28 @@ namespace sjpp {
         if(content.size() <= 3) return { { content }, ParseCode::success };
 
         std::vector<std::string> meanings{};
-        if(content[0] == '1') {
-            std::size_t i = 0;
-            while(true) {
-                i = content.find(' ', i);
-                if(i == std::string::npos) {
-                    return {meanings, ParseCode::success};
-                } else if(i + 1 == content.size()) {
-                    return { meanings, ParseCode::invalid };
-                }
-
-                auto right = content.find(';', i);
-                if(right == std::string::npos) {
-                    meanings.push_back(content.substr(i + 1, content.size() - (i + 1)));
-                }  else {
-                    meanings.push_back(content.substr(i + 1, right - (i + 1)));
-                }
-                i = right;
-            }
-        } else {
+        if(content[0] != '1') {
             return { { content }, ParseCode::success };
         }
+
+        std::size_t i = 0;
+        while(true) {
+            i = content.find(' ', i);
+            if(i == std::string::npos) {
+                return {meanings, ParseCode::success};
+            } else if(i + 1 == content.size()) {
+                return { meanings, ParseCode::invalid };
+            }
+
+            auto right = content.find(';', i);
+            if(right == std::string::npos) {
+                meanings.push_back(content.substr(i + 1, content.size() - (i + 1)));
+            }  else {
+                meanings.push_back(content.substr(i + 1, right - (i + 1)));
+            }
+            i = right;
+        }
+
     }
 
 
