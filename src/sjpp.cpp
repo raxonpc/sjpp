@@ -16,7 +16,14 @@ struct SjpAPI::Impl {
     CURL* m_handle{nullptr};
 };
 
-SjpAPI::SjpAPI() : m_impl{new Impl{}} {}
+SjpAPI::SjpAPI() {
+    try {
+        m_impl = new Impl;
+    } catch(const sjpp_exception& e) {
+        delete m_impl; // prevent memory leak
+        throw;
+    }
+}
 
 SjpAPI::~SjpAPI() { delete m_impl; }
 
